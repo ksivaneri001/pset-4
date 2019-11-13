@@ -7,7 +7,7 @@ let endLoop = false;
 let lowerBound = null;
 let upperBound = null;
 
-console.log("");
+console.log();
 
 while (endLoop === false) {
     lowerBound = Number(readlineSync.question("Lower bound: "));
