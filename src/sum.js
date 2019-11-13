@@ -17,6 +17,8 @@ while (endLoop === false) {
     }
     else if (lowerBound == "" || upperBound == "") {
     }
+    else if (lowerBound % 1 !== 0 || upperBound % 1 !== 0) {
+    }
     else if (lowerBound < MIN || lowerBound > MAX || upperBound < MIN || upperBound > MAX) {
     }
     else if (lowerBound >= upperBound) {
@@ -44,4 +46,5 @@ else {
 
 const NUMBER_OF_EVENS = ((upperEvenBound - lowerEvenBound) / 2) + 1;
 const SUM = (NUMBER_OF_EVENS / 2) * (lowerEvenBound + upperEvenBound);
-console.log("\n" + SUM + ".");
+const SUM_WITH_COMMAS = SUM.toLocaleString("en");
+console.log("\n" + SUM_WITH_COMMAS + ".");
