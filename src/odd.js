@@ -1,23 +1,23 @@
 const readlineSync = require("readline-sync");
 
-const MIN = Number.MIN_SAFE_INTEGER;
+const MIN = 1;
 const MAX = Number.MAX_SAFE_INTEGER;
 
 let endLoop = false;
-let positiveInteger = null;
+let num = null;
 
 console.log();
 
 while (endLoop === false) {
-    positiveInteger = Number(readlineSync.question("Positive Integer: "));
+    num = Number(readlineSync.question("Positive Integer: "));
 
-    if (Number.isNaN(positiveInteger)) {
+    if (Number.isNaN(num)) {
     }
-    else if (positiveInteger == "") {
+    else if (num == "") {
     }
-    else if (positiveInteger % 1 !== 0) {
+    else if (num % 1 !== 0) {
     }
-    else if (positiveInteger < MIN || positiveInteger > MAX) {
+    else if (num < MIN || num > MAX) {
     }
     else {
         endLoop = true;
@@ -25,8 +25,12 @@ while (endLoop === false) {
 }
 
 let sum = 0;
-const LENGTH = String(positiveInteger).length;
+const LENGTH = String(num).length;
 
 for (let i = 0; i < LENGTH; i++) {
-    
+    let splitNumber = num % 10;
+    (splitNumber % 2 !== 0) ? sum = sum + splitNumber : sum += 0;
+    num = Math.floor(num / 10);
 }
+
+console.log("\n" + sum + ".");
