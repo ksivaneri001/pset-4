@@ -23,19 +23,13 @@ while (endLoop === false) {
     }
 }
 
-const LENGTH = Math.ceil(Math.log10(positiveInteger + 1));
-let testVariable = null;
-let divisor = 10;
+let reverseNumber = "";
+const LENGTH = String(positiveInteger).length;
 
 for (let i = 0; i < LENGTH; i++) {
-
+    let splitNumber = positiveInteger % 10;
+    positiveInteger = Math.floor(positiveInteger / 10);
+    (i + 1 == LENGTH) ? reverseNumber = reverseNumber + String(splitNumber + ".") : reverseNumber = reverseNumber + String(splitNumber) + ", ";
 }
 
-testVariable = positiveInteger - (Math.floor(positiveInteger / divisor) * 10);
-positiveInteger = Math.floor(positiveInteger / divisor) * 10;
-
-console.log(positiveInteger);
-positiveInteger /= 10;
-
-console.log(testVariable);
-console.log(positiveInteger);
+console.log("\n" + reverseNumber);
