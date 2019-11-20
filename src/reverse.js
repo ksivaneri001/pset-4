@@ -10,11 +10,7 @@ console.log();
 while (endLoop === false) {
     positiveInteger = Number(readlineSync.question("Positive Integer: "));
 
-    if (Number.isNaN(positiveInteger)) {
-    }
-    else if (positiveInteger % 1 !== 0) {
-    }
-    else if (positiveInteger < MIN || positiveInteger > MAX) {
+    if (Number.isNaN(positiveInteger) || positiveInteger % 1 !== 0 || positiveInteger < MIN || positiveInteger > MAX) {
     }
     else {
         endLoop = true;

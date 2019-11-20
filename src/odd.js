@@ -11,11 +11,7 @@ console.log();
 while (endLoop === false) {
     num = Number(readlineSync.question("Positive Integer: "));
 
-    if (Number.isNaN(num)) {
-    }
-    else if (num % 1 !== 0) {
-    }
-    else if (num < MIN || num > MAX) {
+    if (Number.isNaN(num) || num % 1 !== 0 || num < MIN || num > MAX) {
     }
     else {
         endLoop = true;

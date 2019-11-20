@@ -12,13 +12,7 @@ while (endLoop === false) {
     let input = readlineSync.question("Positive Integer: ");
     num = Number(input);
 
-    if (Number.isNaN(num)) {
-    }
-    else if (input === "") {
-    }
-    else if (num % 1 !== 0) {
-    }
-    else if (num < MIN || num > MAX) {
+    if (Number.isNaN(num) || input === "" || num % 1 !== 0 || num < MIN || num > MAX) {
     }
     else {
         endLoop = true;
