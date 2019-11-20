@@ -10,12 +10,14 @@ let upperBound = null;
 console.log();
 
 while (endLoop === false) {
-    lowerBound = Number(readlineSync.question("Lower bound: "));
-    upperBound = Number(readlineSync.question("Upper bound: "));
+    let lowerInput = readlineSync.question("Lower bound: ");
+    let upperInput = readlineSync.question("Upper bound: ");
+    lowerBound = Number(lowerInput);
+    upperBound = Number(upperInput);
 
     if (Number.isNaN(lowerBound) || Number.isNaN(upperBound)) {
     }
-    else if (lowerBound == "" || upperBound == "") {
+    else if (lowerInput === "" || upperInput === "") {
     }
     else if (lowerBound % 1 !== 0 || upperBound % 1 !== 0) {
     }

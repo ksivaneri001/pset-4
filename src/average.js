@@ -11,9 +11,10 @@ let totalNumbers = 0;
 console.log();
 
 while (endLoop === false) {
-    num = Number(readlineSync.question("Non-negative Integer: "));
+    let input = readlineSync.question("Non-negative Integer: ");
+    num = Number(input);
 
-    if (Number.isNaN(num) || num == "" || num % 1 !== 0 || num > MAX) {
+    if (Number.isNaN(num) || input === "" || num % 1 !== 0 || num > MAX) {
     }
     else if (num < MIN) {
         endLoop = true;

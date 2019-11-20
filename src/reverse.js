@@ -12,8 +12,6 @@ while (endLoop === false) {
 
     if (Number.isNaN(positiveInteger)) {
     }
-    else if (positiveInteger == "") {
-    }
     else if (positiveInteger % 1 !== 0) {
     }
     else if (positiveInteger < MIN || positiveInteger > MAX) {

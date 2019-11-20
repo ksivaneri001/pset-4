@@ -13,8 +13,6 @@ while (endLoop === false) {
 
     if (Number.isNaN(num)) {
     }
-    else if (num == "") {
-    }
     else if (num % 1 !== 0) {
     }
     else if (num < MIN || num > MAX) {

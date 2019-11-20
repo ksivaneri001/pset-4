@@ -9,11 +9,12 @@ let num = null;
 console.log();
 
 while (endLoop === false) {
-    num = Number(readlineSync.question("Positive Integer: "));
+    let input = readlineSync.question("Positive Integer: ");
+    num = Number(input);
 
     if (Number.isNaN(num)) {
     }
-    else if (num == "") {
+    else if (input === "") {
     }
     else if (num % 1 !== 0) {
     }
@@ -26,7 +27,7 @@ while (endLoop === false) {
 
 let primeNumber = "Prime";
 
-if (num === 1) {
+if (num === 0 || num === 1) {
     primeNumber = "Not Prime";
 }
 
