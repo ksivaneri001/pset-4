@@ -33,5 +33,4 @@ for (i = 2; i <= num; i++) {
 }
 
 fibComma = fib.toLocaleString("en");
-
 console.log("\n" + fibComma + ".");
