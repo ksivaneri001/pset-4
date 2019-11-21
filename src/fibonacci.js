@@ -26,7 +26,7 @@ if (num === 1) {
     fib = 0;
 }
 
-for (i = 2; i <= num; i++) {
+for (let i = 2; i <= num; i++) {
     fib = a + b;
     a = b;
     b = fib;

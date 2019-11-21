@@ -25,7 +25,7 @@ if (num === 0 || num === 1) {
     primeNumber = "Not Prime";
 }
 
-for (i = 2; i < num; i++) {
+for (let i = 2; i < num; i++) {
     if (num % i == 0) {
         primeNumber = "Not Prime";
         break;
