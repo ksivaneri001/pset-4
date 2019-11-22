@@ -14,7 +14,7 @@ while (endLoop === false) {
     let input = readlineSync.question("Non-negative Integer: ");
     num = Number(input);
 
-    if (Number.isNaN(num) || input === "" || num % 1 !== 0 || num > MAX) {
+    if (Number.isNaN(num) || input === "" || num > MAX) {
     }
     else if (num < MIN) {
         endLoop = true;
