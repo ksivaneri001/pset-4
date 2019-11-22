@@ -4,7 +4,8 @@ const MIN = 1;
 const MAX = 24;
 
 let height;
-let pyramidStep;
+let pyramidStepLeft;
+let pyramidStepRight;
 
 console.log();
 
@@ -17,15 +18,19 @@ console.log();
 let currentLevel = height;
 
 while (currentLevel > 0) {
-    pyramidStep = "";
+    pyramidStepLeft = "";
+    pyramidStepRight = "";
 
     for (let i = 0; i <= height; i++) {
-        pyramidStep = pyramidStep + "#";
+        pyramidStepLeft = pyramidStepLeft + "#";
     }
     for (let i = 0; i < currentLevel - 1; i++) {
-        pyramidStep = pyramidStep.replace(pyramidStep.charAt(i), " ");
+        pyramidStepLeft = pyramidStepLeft.replace(pyramidStepLeft.charAt(i), " ");
+    }
+    for (let i = currentLevel - 2; i < height; i++) {
+        pyramidStepRight = pyramidStepRight + "#";
     }
 
-    console.log(pyramidStep);
+    console.log(pyramidStepLeft + " " + pyramidStepRight);
     currentLevel--;
 }

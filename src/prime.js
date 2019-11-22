@@ -9,7 +9,7 @@ let num = null;
 console.log();
 
 while (endLoop === false) {
-    let input = readlineSync.question("Positive Integer: ");
+    let input = readlineSync.question("Non-negative integer: ");
     num = Number(input);
 
     if (Number.isNaN(num) || input === "" || num % 1 !== 0 || num < MIN || num > MAX) {
