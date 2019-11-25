@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-const MIN = 1000000000000;
+const MIN = 1;
 const MAX = 9999999999999999;
 
 let num;
