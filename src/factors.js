@@ -34,4 +34,4 @@ for (let i = 1; i <= num; i++) {
     }
 }
 
-console.log("\n" + factors);
+console.log("\n" + factors + "\n");

@@ -26,4 +26,4 @@ while (endLoop === false) {
 }
 
 let average = (sum / totalNumbers).toLocaleString("en", {minimumFractionDigits:3, maximumFractionDigits:3});
-console.log("\n" + average + ".");
+console.log("\n" + average + ".\n");

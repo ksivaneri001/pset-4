@@ -26,4 +26,4 @@ for (let i = 0; i < LENGTH; i++) {
     (i + 1 == LENGTH) ? reverseNumber = reverseNumber + String(splitNumber + ".") : reverseNumber = reverseNumber + String(splitNumber) + ", ";
 }
 
-console.log("\n" + reverseNumber);
+console.log("\n" + reverseNumber + "\n");

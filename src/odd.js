@@ -27,4 +27,4 @@ for (let i = 0; i < LENGTH; i++) {
     num = Math.floor(num / 10);
 }
 
-console.log("\n" + sum + ".");
+console.log("\n" + sum + ".\n");

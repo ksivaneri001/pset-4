@@ -49,4 +49,4 @@ else {
 const NUMBER_OF_EVENS = ((upperEvenBound - lowerEvenBound) / 2) + 1;
 const SUM = (NUMBER_OF_EVENS / 2) * (lowerEvenBound + upperEvenBound);
 const SUM_WITH_COMMAS = SUM.toLocaleString("en");
-console.log("\n" + SUM_WITH_COMMAS + ".");
+console.log("\n" + SUM_WITH_COMMAS + ".\n");

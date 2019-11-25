@@ -34,3 +34,5 @@ while (currentLevel > 0) {
     console.log(pyramidStepLeft + " " + pyramidStepRight);
     currentLevel--;
 }
+
+console.log();

@@ -32,4 +32,4 @@ for (let i = 2; i < num; i++) {
     }
 }
 
-console.log("\n" + primeNumber + ".");
+console.log("\n" + primeNumber + ".\n");

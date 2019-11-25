@@ -29,3 +29,5 @@ while (currentLevel > 0) {
     console.log(pyramidStep);
     currentLevel--;
 }
+
+console.log();
